@@ -113,3 +113,9 @@ video {
 }
 .unhidden {}
 /* 1a1a1a*/
+#status {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    transform: translate(16%, -50%)		
+    }
