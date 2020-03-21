@@ -1,0 +1,151 @@
+<meta property="og:title" content="ARS - Apocalypse Rising 2 Cheat">
+<meta property="og:description" content="ARS is an Apocalypse Rising 2 PAID Cheat. With over 20+ features we ensure that you can enhilate any player. Supporting Synapse X, Sentinel and Protosmasher">
+<meta property="og:image" content="https://cdn.discordapp.com/attachments/534469815914463232/690253944123162840/logo.png">
+
+<head>
+    <title>ARS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png">
+</head>
+<body>
+<video disablePictureInPicture playsinline loop>
+    <source src="vid.mp4" type="video/mp4" />
+        <script>
+            var video = document.currentScript.parentElement;
+            video.volume = 0.1;
+    </script>
+</video>
+<div id="rain-container"></div>
+
+<div class="main">
+    <pre class="hidden">ars</pre><br>
+    <a href="#" onclick="start()" class="unhidden" id="enter">enter.</a>
+   <span class="hidden">{ <a class="hidden" href="#features" id="featuresButton">Features</a> | <a class="hidden" href="#purchase" id="purchaseButton"  onclick="start()">Purchase</a> | <a class="hidden" href="https://discord.me/1nferious">Discord</a> } </span>
+</div>  
+<div id="featuresModal" class="modal">
+  <div class="modal-content">
+    <span class="featuresClose">[&times;] Features List</span>
+    <p>
+        Execution:<br>
+        [•] Mod Protection<br>
+        [•] Chat in Menu<br>
+        [•] View PlayerList in Menu<br>
+        [•] Removal of useless UI's (e.g. controls)<br>
+        
+        Local Player:<br>
+        [•] Toggle Bhop<br>
+        [•] Toggle Gravity<br>
+        [•] Toggle Fly<br>
+        [•] Set Jump Power<br>
+        [•] Set Sprint Speed<br>
+        [•] Set Hip Height<br>
+        [•] Infinite Jump<br>
+        [•] Infinite Stamina<br>
+        [•] Invisibility<br>
+        [•] Toggle Noclip<br>
+        [•] Set Field of View<br>
+        [•] Custom Stat Esp<br>
+        
+        Client Map:<br>
+        [•] Remove Doors/Windows<br>
+        [•] Remove Useless Sounds<br>
+        [•] Remove Useless Lightning<br>
+        [•] Instant Open<br>
+        [•] Set Day<br>
+        [•] No Fog<br>
+        
+        Gun Mods:<br>
+        [•] Silent Aim<br>
+        [•] Set Recoil <br>
+        [•] Set Spread <br>
+        [•] Set Fire Rate<br>
+        [•] Set Burst Count<br>
+        [•] Auto Firemode<br>
+        [•] Semi Firemode<br>
+        [•] Burst Firemode<br>
+
+        Vehicle Mods:<br>
+        [•] Speed Modifier <br>
+        
+        Misc:<br>
+        [•] Aimbot<br>
+        [•] RGB Weapons<br>
+        [•] Anti Zombies<br>
+        
+        Teleporting:<br>
+        [•] Teleport to Players<br>
+        [•] Teleport to Corpses<br>
+        [•] Teleport to Loot<br>
+        [•] Teleport to Locations<br>
+        [•] Teleport to Vehicles<br>
+        
+        ESP:<br>
+        [•] Player ESP<br>
+        [•] Zombie ESP<br>
+        [•] Item ESP<br>
+        [•] Map ESp<br>
+        [•] Stealth Loot ESP<br>
+    </p>
+  </div>
+</div>
+<div id="purchaseModal" class="modal">
+    <div class="modal-content">
+        <span class="purchaseClose">[&times;] Purchase</span><br>
+        <center><img src="utils/syn.png" width="80px" height="80px"> <img src="utils/sen.jpg" width="80px" height="80px"> <img src="utils/ps.png" width="80px" height="80px"></center>
+        <center><span>Only Exclusive to Synapse X, Sentinel and ProtoSmasher.</span></center>
+        <center><span>Please ensure when making a paypal payment to leave your discord tag! Once you have please join the discord server and create a ticket.</span></center>
+        <center><span><a href="https://www.paypal.me/1nferious/5">paypal</a> £5</span></center>
+        <center><span><a href="https://discord.me/1nferious">other payment methods</a></span></center>
+        <center><img src="utils/tp.png" width="60px" height="60px"> <img src="utils/steam.png" width="60px" height="60px">  <img src="utils/robux.png" width="60px" height="60px"> <img src="utils/nitro.png" width="80px" height="80px"></center>
+    </div>
+</div>
+<script>
+    var Fmodal = document.getElementById("featuresModal");
+    var Fbtn = document.getElementById("featuresButton");
+    var Fspan = document.getElementsByClassName("featuresClose")[0];
+    var Pmodal = document.getElementById("purchaseModal");
+    var Pbtn = document.getElementById("purchaseButton");
+    var Pspan = document.getElementsByClassName("purchaseClose")[0];
+    Fbtn.onclick = function() {
+        Fmodal.style.display = "block";
+    }
+    Fspan.onclick = function() {
+        Fmodal.style.display = "none";
+    }
+    window.onclick = function(event) {
+        if (event.target == Fmodal) {
+            Fmodal.style.display = "none";
+          }
+    }
+
+    Pbtn.onclick = function() {
+        Pmodal.style.display = "block";
+    }
+    Pspan.onclick = function() {
+        Pmodal.style.display = "none";
+    }
+    window.onclick = function(event) {
+        if (event.target == Fmodal) {
+            Pmodal.style.display = "none";
+          }
+    }
+</script>
+    <script>
+        //var audio = document.getElementById("music");
+        //audio.src = "ok.mp3";
+        //audio.volume = 0.5;
+        function start() {
+            document.querySelectorAll(".hidden").forEach(elem => {
+                elem.className = elem.className.replace("hidden", "");
+            });
+
+            document.querySelectorAll(".unhidden").forEach(elem => {
+                elem.className = elem.className.replace("unhidden", "hidden");
+            });
+            var vid = document.querySelector("video");
+            vid.play();
+        }
+    </script>
+</body>
+
+<div id="status"><p>sales: <span style="color: green;">open</span></p></div>
