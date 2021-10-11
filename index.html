@@ -1,131 +1,70 @@
-<meta property="og:title" content="ARS - Apocalypse Rising 2 Script">
-<meta property="og:description" content="ARS is an Apocalypse Rising 2 PAID Script. With over 25+ features we ensure that you can destroy any player. Supporting Synapse X">
-<meta property="og:image" content="https://cdn.discordapp.com/attachments/534469815914463232/690253944123162840/logo.png">
-
-<head>
-    <title>ARS</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="logo.png">
-</head>
-<body>
-<video disablePictureInPicture playsinline loop>
-    <source src="vid.mp4" type="video/mp4" />
-        <script>
-            var video = document.currentScript.parentElement;
-            video.volume = 0.1;
-    </script>
-</video>
-<div id="rain-container"></div>
-
-<div class="main">
-    <pre class="hidden">ars.<span style="color: red;">red</span></pre><br>
-    <a href="#" onclick="start()" class="unhidden" id="enter">enter.</a>
-   <span class="hidden">{ <a class="hidden" href="#features" id="featuresButton">Features</a> | <a class="hidden" href="#purchase" id="purchaseButton"  onclick="start()">Purchase</a> | <a class="hidden" href="https://discord.me/1nferious">Discord</a> } </span>
-</div>  
-<div id="featuresModal" class="modal">
-  <div class="modal-content">
-    <span class="featuresClose">[&times;] Features List</span>
-    <p> 
-        Local Player:<br>
-        [•] Invisible<br>
-        [•] Auto Use<br>
-        [•] Big Head<br>
-        [•] Infinite Jump<br>
-        [•] Infinite Stamina<br>
-        [•] Set Field of View<br>
-        <br>
-        Client Map:<br>
-        [•] Sky Box Modifier<br>
-        [•] Instant Open<br>
-        [•] Time Changer<br>
-        [•] No Fog<br>
-        <br>
-        Gun Mods:<br>
-        [•] FireRate Modifier<br>
-        [•] Spread Modifier<br>
-        [•] Firemode Modifier<br>
-        [•] Recoil Modifier<br>
-        <br>
-        Vehicle Mods:<br>
-        [•] Speed Modifier <br>
-        [•] Anti Vehicle Impact<br>
-        <br>
-        Teleporting:<br>
-        [•] Teleport to Players<br>
-        [•] Teleport to Places<br>
-        [•] Teleport to Corpses<br>
-        [•] Teleport to Loot<br>
-        [•] Teleport to Vehicles<br>
-        [•] Click TP<br>
-        <br>
-        ESP:<br>
-        [•] Player ESP<br>
-        [•] Stat ESP<br>
-        [•] Health ESP<br>
-        [•] Item ESP<br>
-        [•] Map ESP<br>
-        [•] Vehicle ESP<br>
-    </p>
-  </div>
-</div>
-<div id="purchaseModal" class="modal">
-    <div class="modal-content">
-        <span class="purchaseClose">[&times;] Purchase</span><br>
-        <center><img src="utils/syn.png" width="80px" height="80px"></center>
-        <center><span>Only Exclusive to Synapse X.</span></center>
-        <center><span>Please ensure when making a payment, you've joined the discord server and created a support ticket in #support.</span></center>
-        <center><span><a href="https://sellix.io/product/60148eea46db9">paypal</a> £6</span></center>
-        <center><span><a href="https://discord.gg/6NNYUEXAR2">other payment methods</a></span></center>
-        <center><img src="utils/tp.png" width="60px" height="60px"> <img src="utils/steam.png" width="60px" height="60px"></center>
-    </div>
-</div>
-<script>
-    var Fmodal = document.getElementById("featuresModal");
-    var Fbtn = document.getElementById("featuresButton");
-    var Fspan = document.getElementsByClassName("featuresClose")[0];
-    var Pmodal = document.getElementById("purchaseModal");
-    var Pbtn = document.getElementById("purchaseButton");
-    var Pspan = document.getElementsByClassName("purchaseClose")[0];
-    Fbtn.onclick = function() {
-        Fmodal.style.display = "block";
-    }
-    Fspan.onclick = function() {
-        Fmodal.style.display = "none";
-    }
-    window.onclick = function(event) {
-        if (event.target == Fmodal) {
-            Fmodal.style.display = "none";
-          }
-    }
-
-    Pbtn.onclick = function() {
-        Pmodal.style.display = "block";
-    }
-    Pspan.onclick = function() {
-        Pmodal.style.display = "none";
-    }
-    window.onclick = function(event) {
-        if (event.target == Fmodal) {
-            Pmodal.style.display = "none";
-          }
-    }
-</script>
-    <script>
-        //var audio = document.getElementById("music");
-        //audio.src = "ok.mp3";
-        //audio.volume = 0.5;
-        function start() {
-            document.querySelectorAll(".hidden").forEach(elem => {
-                elem.className = elem.className.replace("hidden", "");
-            });
-
-            document.querySelectorAll(".unhidden").forEach(elem => {
-                elem.className = elem.className.replace("unhidden", "hidden");
-            });
-            var vid = document.querySelector("video");
-            vid.play();
-        }
-    </script>
-</body>
-
-<div id="status"><p>sales: <span style="color: green;">open</span></p></div>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+		<title>ars.red</title>
+        <meta property="og:title" content="ARS - Apocalypse Rising 2 Script">
+        <meta property="og:description" content="ARS is an Apocalypse Rising 2 PAID Script. With over 25+ features we ensure that you can destroy any player. Supporting Synapse X">
+        <meta property="og:image" content="https://cdn.discordapp.com/attachments/534469815914463232/690253944123162840/logo.png">
+		
+		<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+		<link rel="stylesheet" href="assets/css/style.css">
+		<script src="https://cdn.sellix.io/static/js/embed.js"></script>
+	</head>
+	<body oncontextmenu="return false"> 
+        <div id="particles-js"></div> 
+        <div id="header">
+            <div id="content">
+                <div class="title"><span>ARS.</span>RED</div>
+                <ul>
+                    <li><a href="https://discord.gg/6NNYUEXAR2" target="_blank">Discord</a></li>
+                </ul>
+                <div id="test123"></div>
+                <a href="#products" class="scroller"><img src="assets/img/scroller.gif"></a>
+            </div>
+        </div>
+        <div id="products">
+            <div class="container">
+                <div class="title">Products</div>
+                <div class="line"></div>
+                <div class="text">We provide the best Apocalypse Rising 2 script for public use</div>
+            </div>
+        </div>
+        <div id="pricing">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-3">
+                        <div class="panel">
+                            <div class="title">ARS.RED</div>
+                            <div class="text">Lua Script</div>
+                            <div class="divider"></div>
+                            <div class="term">Synapse X Exclusive</div>
+                            <div class="divider"></div>
+                            <div class="price">£6.00</div>
+                            <div class="term">per key</div>
+                            <a data-sellix-product="60148eea46db9" class="order">Purchase</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="panel">
+                            <div class="title">Apocalypse Rising 2</div>
+                            <div class="text">Alt Accounts</div>
+                            <div class="divider"></div>
+                            <div class="term">Fresh Accounts with AR2</div>
+                            <div class="divider"></div>
+                            <div class="price">$2.50</div>
+                            <div class="term">per account</div>
+                            <a data-sellix-product="6160a3f3c5b96" class="order">Purchase</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="assets/js/particles.min.js"></script>
+		<script src="assets/js/app.js"></script>
+	</body>
+</html>
