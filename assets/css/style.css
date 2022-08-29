@@ -29,7 +29,6 @@ body, html {
 #content .title {
   color: #f23b5c;
   text-transform: uppercase;
-  padding-top: 42.5vh;
   font-weight: 800;
   font-size: 4rem;
   text-align: center;
@@ -224,4 +223,21 @@ body::-webkit-scrollbar-thumb {
   background-color: #f23b5c;
   border-radius: 6px;
   border: 3px solid #333;
+}
+
+#main_title {
+  display: inline-block;
+  margin-top: 42.5vh;
+  position: relative;
+  left: 50%; 
+  transform: translateX(-50%);
+}
+
+#main_title:hover span {
+  display: none;
+}
+
+#main_title:hover:before {
+  color: white;
+  content: "PFS";
 }
